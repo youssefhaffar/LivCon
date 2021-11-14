@@ -5,9 +5,9 @@ pipeline
 			stage('Pull'){
 				steps{
 					script{
-						checkout([$class: 'GitSCM' , branches: [[name: '*/master]],
+						checkout([$class: 'GitSCM' , branches: [[name: '*/master']],
 							userRemoteConfigs : [[
-								credentialsId: '67c2744e-c2d9-4b17-9f12-35c2d4eaac32',
+								credentialsId: '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',
 								url: 'https://github.com/youssefhaffar/LivCon.git']]])
 					      }
 				     }
